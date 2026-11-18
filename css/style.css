@@ -1,0 +1,425 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #1D2D3A;
+    --accent: #2563EB;
+    --accent-hover: #1D4ED8;
+    --bg-page: #F5F7FA;
+    --card-bg: #FFFFFF;
+    --text-main: #2C3E50;
+    --text-muted: #5A6B7C;
+    --border: #DDE3EA;
+}
+
+body.theme-accroche-coeurs {
+    --accent: #D63384;
+    --accent-hover: #A61E63;
+}
+
+body.theme-patrimoine {
+    --accent: #C27803;
+    --accent-hover: #975A16;
+}
+
+body.theme-legal {
+    --accent: #0D9488;
+    --accent-hover: #0F766E;
+}
+
+body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--primary);
+    margin-top: 0;
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 6px;
+    margin-top: 28px;
+    clear: both;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: var(--primary);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    background-color: var(--primary);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Image flottante */
+.image-flottante {
+    float: left;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px 15px 0;
+    border-radius: 8px;
+}
+
+.clear {
+    clear: both;
+}
+
+.liste {
+    background-color: #EDF2F7;
+    border-left: 4px solid var(--accent);
+    padding: 15px 25px;
+    border-radius: 0 8px 8px 0;
+    margin: 15px 0 25px 0;
+}
+
+.liste ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.liste li {
+    padding: 4px 0;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-link:hover, .btn-link:active {
+    background-color: var(--accent);
+    color: #FFFFFF !important; 
+    transform: translateY(-1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+    background-color: #E2E8F0;
+}
+
+footer {
+    background-color: var(--primary);
+    color: #DDE3EA;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+
+.sommaire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+
+/* Formulaire de contact */
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-main);
+    background-color: #FAFCFE;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(214, 51, 132, 0.15);
+}
+
+/* Bouton flottant retour en haut */
+.btn-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    
+    /* Gestion de la visibilité */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease, background-color 0.2s ease;
+
+}
+
+.btn-top:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-4px); 
+}
+
+/* Classe ajoutée dynamiquement par JavaScript */
+.btn-top.visible {
+    opacity: 1;                   /* Devient visible */
+    visibility: visible;          /* Devient cliquable */
+}
+
+/* ==========================================================
+   TP5 : RESPONSIVE DESIGN ET MEDIA QUERIES
+   ========================================================== */
+
+/* 1. Grand écran / Ordinateur de bureau (>= 1200px) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+}
+
+/* 2. Écran tablette (entre 768px et 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .image-flottante {
+        width: 280px;
+    }
+}
+
+/* 3. Écran mobile (< 768px) */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    /* Navigation empilée en colonne sur mobile */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    /* Désactivation du flottement des images pour éviter les débordements */
+    .image-flottante {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    /* Adaptation des tableaux avec scroll si l'écran est trop étroit */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .btn-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* 4. Mise en page pour l'impression (@media print) */
+@media print {
+    /* Masquer les éléments inutiles sur papier */
+    header,
+    nav,
+    footer,
+    .btn-top,
+    .btn-link,
+    .form-contact,
+    .sommaire {
+        display: none !important;
+    }
+
+    /* Fond blanc et texte noir pour économiser l'encre */
+    body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 12pt;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Les articles sont encadrés par une petite bordure dashed */
+    article,
+    .liste {
+        border: 1px dashed #333333 !important;
+        background: transparent !important;
+        padding: 12px !important;
+        margin-bottom: 20px !important;
+        page-break-inside: avoid;
+    }
+}

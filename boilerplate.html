@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de la Page - BLOG Actu d'Angers</title>
+    <!-- Chemins relatifs : ../../ si la page est dans pages/article/ ou ../ si dans pages/ -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<a href="#top" class="btn-top" id="btnTop" aria-label="Retourner en haut">↑</a>
+
+<body id="top">
+    <!-- En-tête -->
+    <header>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteneur principal -->
+    <main class="container">
+        <!-- Sommaire rapide -->
+        <nav class="sommaire" aria-label="Sommaire de l'article">
+            <a href="../../index.html" class="btn-link">← Accueil</a>
+            <a href="#section1" class="btn-link">Section 1</a>
+            <a href="#section2" class="btn-link">Section 2</a>
+        </nav>
+
+        <h1>Titre principal H1 de la page</h1>
+
+        <!-- Image flottante avec habillage de texte -->
+        <img src="../../assets/image/placeholder.jpg" alt="Description de l'image" class="image-flottante">
+
+        <p>
+            Paragraphe d'introduction présentant le sujet de la page. Le texte s'enroule automatiquement 
+            autour de l'image flottante. Vous pouvez insérer des mots en <strong>gras</strong> ou en <em>italique</em>.
+        </p>
+        <p>
+            Deuxième paragraphe d'accompagnement pour compléter l'introduction de l'article.
+        </p>
+
+        <!-- Arrêt du flottement -->
+        <div class="clear"></div>
+
+        <!-- Section 1 -->
+        <h2 id="section1">Titre de la première section</h2>
+        <p>Texte explicatif pour introduire les éléments listés ci-dessous.</p>
+
+        <div class="liste">
+            <ul>
+                <li>
+                    <h3>Sous-titre de l'élément A</h3>
+                    <p>Description détaillée du premier point abordé dans cette partie.</p>
+                </li>
+                <li>
+                    <h3>Sous-titre de l'élément B</h3>
+                    <p>Description détaillée du second point abordé dans cette partie.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2 avec tableau -->
+        <h2 id="section2">Titre de la seconde section</h2>
+        <table>
+            <caption>Informations pratiques</caption>
+            <thead>
+                <tr>
+                    <th>Colonne 1</th>
+                    <th>Colonne 2</th>
+                    <th>Colonne 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Donnée 1A</td>
+                    <td>Donnée 2A</td>
+                    <td>Donnée 3A</td>
+                </tr>
+                <tr>
+                    <td>Donnée 1B</td>
+                    <td>Donnée 2B</td>
+                    <td>Donnée 3B</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Texte récapitulatif ou information de bas de tableau</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Lien retour accueil -->
+        <p style="margin-top: 25px;">
+            <a href="../../index.html" class="btn-link">← Retour vers la page d'accueil</a>
+        </p>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Créé par Tom Vernier-Fétu — Date de création : Septembre 2026</p>
+        <p>
+            <a href="../mentions-legales.html">Mentions Légales</a> |
+            <a href="../confidentialite.html">Politique de confidentialité</a> |
+            <a href="../contact.html">Contact</a>
+        </p>
+    </footer>
+
+    <!-- Script retour en haut -->
+    <script src="../../js/btnTop.js"></script>
+</body>
+
+</html>
+
