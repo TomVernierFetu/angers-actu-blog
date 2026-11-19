@@ -300,13 +300,11 @@ footer p {
 
 /* Classe ajoutée dynamiquement par JavaScript */
 .btn-top.visible {
-    opacity: 1;                   /* Devient visible */
-    visibility: visible;          /* Devient cliquable */
+    opacity: 1;                   
+    visibility: visible;          
 }
 
-/* ==========================================================
-   TP5 : RESPONSIVE DESIGN ET MEDIA QUERIES
-   ========================================================== */
+/* Responsive Design et Media Queries */
 
 /* 1. Grand écran / Ordinateur de bureau (>= 1200px) */
 @media screen and (min-width: 1200px) {
