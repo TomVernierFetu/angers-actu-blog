@@ -2,7 +2,7 @@
 
 Site web vitrine et blog d'actualités dédié aux temps forts et événements culturels de la ville d'Angers (*Festival des Accroche-Cœurs*, *Journées Européennes du Patrimoine*).
 
-Projet d'intégration web statique réalisé dans le cadre de ma formation en développement logiciel (BTS SIO).
+Projet d'intégration web responsive réalisé en HTML5 sémantique et CSS3 moderne.
 
 ---
 
